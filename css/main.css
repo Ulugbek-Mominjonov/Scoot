@@ -123,3 +123,39 @@ img{
 .nav-get-scotin{
   margin-left: auto;
 }
+
+/* HERO */
+.hero-section{
+  position: relative;
+  background: url("../img/herobgimg.png");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: contain;
+}
+.hero-container{
+  padding-top: 153px;
+  padding-bottom: 153px;
+}
+.hero-info{
+  max-width: 500px;
+}
+.hero-heading{
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: var(--button-color);
+}
+.hero-text{
+  width: 405px;
+  margin-left: auto;
+  margin-bottom: 40px;
+  color: var(--button-color);
+}
+.hero-link{
+  display: inline-block;
+  margin-left: 95px;
+}
