@@ -6,7 +6,7 @@
   --dim-grey: rgb(147, 156, 170);
   --light-grey: rgb(229, 236, 244);
   --snow: rgb(242, 245, 249);
-
+  --button-color: rgb(255, 255, 255);
   /* FONTS  */
   --main-font: "Space Mono", "Arial", san-serif;
   --secondary-font: "Lexend Deca", "Arial", san-serif;
@@ -50,10 +50,10 @@ body{
   padding: 0;
   margin: 0;
   font-family: var(--secondary-font);
-  font-weight: 500;
-  font-size: 19px;
-  line-height: 23px;
-  color: #515151;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
 }
 .visually-hidden {
   position: absolute;
@@ -68,4 +68,58 @@ body{
 img{
   max-width: 100%;
   display: block;
+}
+.container{
+  max-width: 1310px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.list{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  list-style-type: none;
+  align-items: center;
+}
+.button{
+  padding: 14px 39px;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--button-color);
+  background-color: var(--yellow);
+  text-decoration: none;
+}
+
+/* HEADER  */
+.site-nav{
+  padding-top: 22px;
+  padding-bottom: 22px;
+  background-color: var(--button-color);
+}
+.site-nav-container{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.logo{
+  margin-right: 58px;
+}
+.nav-item{
+  margin-left: 32px;
+}
+.nav-link{
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--dim-grey);
+  text-decoration: none;
+}
+.nav-get-scotin{
+  margin-left: auto;
 }
