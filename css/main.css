@@ -127,7 +127,7 @@ img{
 /* HERO */
 .hero-section{
   position: relative;
-  background: url("../img/herobgimg.png");
+  background: #F2F2F2 url("../img/herobgimg.png");
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: contain;
@@ -158,4 +158,60 @@ img{
 .hero-link{
   display: inline-block;
   margin-left: 95px;
+}
+/* MAIN  */
+main{
+  background-color: #F2F2F2;
+}
+
+/* our-conveniences */
+.our-conveniences{
+  background-image: url("../img/long-line.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 234px) 201px;
+}
+.conveniences-container{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 160px;
+  padding-bottom: 200px;
+}
+.conveniences-item{
+  max-width: 350px;
+}
+.conveniences-item + .conveniences-item{
+  margin-left: 30px;
+}
+.conveniences-item::before{
+  display: block;
+  margin-bottom: 40px;
+  content: "";
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background-color: var(--yellow);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.app::before{
+  background-image: url("../img/app.png");
+}
+.scooter::before{
+  background-image: url("../img/scooter.png");
+}
+.ride::before{
+  background-image: url("../img/ride.png");
+}
+.conveniences-title{
+  margin-bottom: 27px;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: var(--dark-navy);
+}
+.conveniences-text{
+  margin-bottom: 0;
 }
