@@ -6,7 +6,7 @@
   --dim-grey: rgb(147, 156, 170);
   --light-grey: rgb(229, 236, 244);
   --snow: rgb(242, 245, 249);
-  --button-color: rgb(255, 255, 255);
+  --white-color: rgb(255, 255, 255);
   /* FONTS  */
   --main-font: "Space Mono", "Arial", san-serif;
   --secondary-font: "Lexend Deca", "Arial", san-serif;
@@ -49,6 +49,7 @@ html{
 body{
   padding: 0;
   margin: 0;
+  margin-top: 97px;
   font-family: var(--secondary-font);
   font-weight: 400;
   font-size: 15px;
@@ -85,21 +86,32 @@ img{
   align-items: center;
 }
 .button{
-  padding: 14px 39px;
+  padding: 11px 36px;
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 15px;
   line-height: 25px;
-  color: var(--button-color);
+  color: var(--white-color);
+  border: 3px solid transparent;
   background-color: var(--yellow);
   text-decoration: none;
+}
+.button:hover{
+  border: 3px solid var(--yellow);
+  background-color: transparent;
+  color: var(--yellow);
 }
 
 /* HEADER  */
 .site-nav{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
   padding-top: 22px;
   padding-bottom: 22px;
-  background-color: var(--button-color);
+  z-index: 99;
+  background-color: var(--white-color);
 }
 .site-nav-container{
   display: flex;
@@ -119,6 +131,9 @@ img{
   line-height: 25px;
   color: var(--dim-grey);
   text-decoration: none;
+}
+.nav-link:hover{
+  color: var(--yellow);
 }
 .nav-get-scotin{
   margin-left: auto;
@@ -169,13 +184,13 @@ img{
   font-size: 56px;
   line-height: 56px;
   letter-spacing: -2.5px;
-  color: var(--button-color);
+  color: var(--white-color);
 }
 .hero-text{
   width: 405px;
   margin-left: auto;
   margin-bottom: 40px;
-  color: var(--button-color);
+  color: var(--white-color);
 }
 .hero-link{
   display: inline-block;
@@ -320,7 +335,7 @@ main{
   font-size: 48px;
   line-height: 48px;
   letter-spacing: -2.14286px;
-  color: var(--button-color);
+  color: var(--white-color);
 }
 .app-store, .google-play{
   display: inline-block;
@@ -334,7 +349,6 @@ main{
 .footer-nav-container{
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   padding-top: 36px;
   padding-bottom: 36px;
 }
@@ -352,6 +366,9 @@ main{
   color: var(--dim-grey);
   text-decoration: none;
 }
+.footer-nav-link:hover{
+  color: var(--yellow);
+}
 .social-networks{
   display: flex;
   align-items: center;
@@ -359,4 +376,7 @@ main{
 }
 .social-network:not(:last-child){
   margin-right: 24px;
+}
+.social-network:hover path{
+  fill: var(--light-grey);
 }
