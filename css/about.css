@@ -32,3 +32,59 @@
   letter-spacing: -2.5px;
   color: var(--white-color);
 }
+
+/* MAIN  */
+/* our-offer */
+.our-offer{
+  padding-top: 120px;
+}
+.offer-list{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.offer-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+.offer-item::after{
+  position: relative;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.Mobility::after{
+  width: 741px;
+  height: 450px;
+  background-image: url(../img/about-img/mobility.png);
+}
+.Better::after{
+  width: 610px;
+  height: 445px;
+  background-image: url(../img/about-img/better.png);
+}
+.offer-item:nth-child(even)::after{
+  order: -1;
+  right: 115px;
+}
+.offer-item:nth-child(odd)::after{
+  left: 115px;
+}
+.offer-wrapper{
+  max-width: 445px;
+}
+.offer-title{
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: var(--dark-navy);
+}
+.offer-info{
+  margin: 0;
+}
