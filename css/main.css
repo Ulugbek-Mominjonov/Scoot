@@ -450,6 +450,9 @@ img {
   padding: 40px 40px;
   background-color: var(--snow);
 }
+.about-faq-data:hover{
+  background-color: var(--light-yellow);
+}
 .about-faq-data + .about-faq-data {
   margin-top: 16px;
 }
