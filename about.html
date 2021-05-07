@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
   <!-- HEADER  -->
@@ -38,31 +38,31 @@
   <!-- HEADER END -->
 
   <!-- hero -->
-  <div class="hero-box">
-    <div class="container hero-container">
-      <h1 class="hero-title">About</h1>
+  <div class="about-hero-box">
+    <div class="container about-hero-container">
+      <h1 class="about-hero-title">About</h1>
     </div>
   </div>
   <!-- MAIN -->
   <main>
     <!-- our-offer  -->
-    <section class="our-offer">
-      <div class="container offer-container">
+    <section class="about-our-offer">
+      <div class="container about-offer-container">
         <h2 class="visually-hidden">Our-offer</h2>
-        <ul class="offer-list">
-          <li class="offer-item Mobility">
-            <div class="offer-wrapper">
-              <h3 class="offer-title">Mobility for the digital era</h3>
-              <p class="offer-info">
+        <ul class="about-offer-list">
+          <li class="about-offer-item Mobility">
+            <div class="about-offer-wrapper">
+              <h3 class="about-offer-title">Mobility for the digital era</h3>
+              <p class="about-offer-info">
                 Getting around should be simple (and even fun!) for everyone. We embrace technology to provide low cost, smart access to scooters at your fingertips.
               </p>
             </div>
           </li>
 
-          <li class="offer-item Better">
-            <div class="offer-wrapper">
-              <h3 class="offer-title">Better urban living</h3>
-              <p class="offer-info">
+          <li class="about-offer-item Better">
+            <div class="about-offer-wrapper">
+              <h3 class="about-offer-title">Better urban living</h3>
+              <p class="about-offer-info">
                 We’re helping connect cities and bring people closer together. Our scooters are also fully-electric and we offset the minimal carbon footprint for each ride.
               </p>
             </div>
@@ -71,59 +71,84 @@
       </div>
     </section>
 
+    <section class="about-our-values">
+      <div class="container our-value-container">
+        <h2 class="about-section-title">Our values</h2>
+        <ul class="about-values-list list">
+          <li class="value-item tech">
+            <span class="value-number">01</span>
+            <h3 class="value-name">Our tech</h3>
+            <p class="value-text">We’re using cutting edge technology to drive accessible urban transportation forward. Our fully electric scooters are a joy to ride!</p>
+          </li>
+
+          <li class="value-item integrity">
+            <span class="value-number">02</span>
+            <h3 class="value-name">Our integrity</h3>
+            <p class="value-text">We are fully committed to deliver a great yet safe, sustainable micro-mobility experience in every city we serve.</p>
+          </li>
+
+          <li class="value-item community">
+            <span class="value-number">03</span>
+            <h3 class="value-name">Our community</h3>
+            <p class="value-text">We support every community we serve. All workers are paid a living wage based on their location and are Scoot employees.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
     <!-- FAQS -->
-    <section class="faqs-section">
-      <div class="container faqs-container">
-        <h2 class="section-title faqs-title">FAQs</h2>
-        <section class="faqs-item">
-          <h3 class="faq-name">How it works</h3>
-          <div class="faqs-wrapper">
-            <div class="faq-data">
-              <h4 class="data-name">How do I download the app?</h4>
-              <p class="data-text" id="app">
+    <section class="about-faqs-section">
+      <div class="container about-faqs-container">
+        <h2 class="about-section-title about-faqs-title">FAQs</h2>
+        <section class="about-faqs-item">
+          <h3 class="about-faq-name">How it works</h3>
+          <div class="about-faqs-wrapper">
+            <div class="about-faq-data">
+              <h4 class="about-data-name">How do I download the app?</h4>
+              <p class="about-data-text app">
                 To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you’ll be re-directed to the correct page.
               </p>
-              <button class="dropdown-button" onclick="dropdown('app')"></button>
+              <button class="dropdown-button" id="app" onclick="dropdown('app')"></button>
             </div>
-            <div class="faq-data">
-              <h4 class="data-name">Can I find a nearby Scoots?</h4>
-              <p class="data-text" id="scoot">
+            <div class="about-faq-data">
+              <h4 class="about-data-name">Can I find a nearby Scoots?</h4>
+              <p class="about-data-text scoot">
                 To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you’ll be re-directed to the correct page.
               </p>
-              <button class="dropdown-button" onclick="dropdown('scoot')"></button>
+              <button class="dropdown-button" id="scoot" onclick="dropdown('scoot')"></button>
             </div>
-            <div class="faq-data">
-              <h4 class="data-name">Do I need a license to ride?</h4>
-              <p class="data-text" id="ride">
+            <div class="about-faq-data">
+              <h4 class="about-data-name">Do I need a license to ride?</h4>
+              <p class="about-data-text ride">
                 To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you’ll be re-directed to the correct page.
               </p>
-              <button class="dropdown-button" onclick="dropdown('ride')"></button>
+              <button class="dropdown-button" id="ride" onclick="dropdown('ride')"></button>
             </div>
           </div>
         </section>
-        <section class="faqs-item">
-          <h3 class="faq-name">Safe driving</h3>
-          <div class="faqs-wrapper">
-            <div class="faq-data">
-              <h4 class="data-name">Should I wear a helmet?</h4>
-              <p class="data-text" id="helmet">
+        <section class="about-faqs-item">
+          <h3 class="about-faq-name">Safe driving</h3>
+          <div class="about-faqs-wrapper">
+            <div class="about-faq-data">
+              <h4 class="about-data-name">Should I wear a helmet?</h4>
+              <p class="about-data-text helmet">
                 Yes, please do! All cities have different laws. But we strongly strongly strongly recommend always wearing a helmet regardless of the local laws. We like you and we want you to be as safe as possible while Scooting.
               </p>
-              <button class="dropdown-button" onclick="dropdown('helmet')"></button>
+              <button class="dropdown-button" id="helmet" onclick="dropdown('helmet')"></button>
             </div>
-            <div class="faq-data">
-              <h4 class="data-name">How about the rules & regulations?</h4>
-              <p class="data-text" id="rules">
+            <div class="about-faq-data">
+              <h4 class="about-data-name">How about the rules & regulations?</h4>
+              <p class="about-data-text rules">
                 Yes, please do! All cities have different laws. But we strongly strongly strongly recommend always wearing a helmet regardless of the local laws. We like you and we want you to be as safe as possible while Scooting.
               </p>
-              <button class="dropdown-button" onclick="dropdown('rules')"></button>
+              <button class="dropdown-button" id="rules" onclick="dropdown('rules')"></button>
             </div>
-            <div class="faq-data">
-              <h4 class="data-name">What if I damage my Scoot?</h4>
-              <p class="data-text" id="damage">
+            <div class="about-faq-data">
+              <h4 class="about-data-name">What if I damage my Scoot?</h4>
+              <p class="about-data-text damage">
                 Yes, please do! All cities have different laws. But we strongly strongly strongly recommend always wearing a helmet regardless of the local laws. We like you and we want you to be as safe as possible while Scooting.
               </p>
-              <button class="dropdown-button" onclick="dropdown('damage')"></button>
+              <button class="dropdown-button" id="damage" onclick="dropdown('damage')"></button>
             </div>
           </div>
         </section>

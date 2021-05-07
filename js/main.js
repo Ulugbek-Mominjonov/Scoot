@@ -1,6 +1,13 @@
 function dropdown(index){
-    var id = index + "";
-    var text = document.getElementById(id);
-    console.log(text);
-    text.classList.toggle("open");
+    changeIcon(index);
+    toggleClass(index);
+}
+function toggleClass(index){
+    var classname = index + "";
+    var text = document.getElementsByClassName(classname);
+    text[0].classList.toggle("open");
+}
+function changeIcon(index){
+    var icon = index + "";
+    document.getElementById(icon).classList.toggle("close-icon");
 }
