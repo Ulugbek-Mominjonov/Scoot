@@ -297,9 +297,10 @@ img {
 /* our-offer home-offer*/
 .home-our-offer{
   padding-bottom: 40px;
+  padding-bottom: 160px;
 }
-.home-offer-item{
-  margin-bottom: 160px;
+.home-offer-item + .home-offer-item{
+  margin-top: 160px;
 }
 .easy::after{
   width: 741px;
