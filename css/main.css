@@ -320,7 +320,6 @@ img {
 /* COMMON STYLE FOR ABOUT CAREERS AND LOCATION */
 /* HERO */
 .hero-box {
-  background: linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75));
   background-repeat: no-repeat;
   background-position: center 0;
 }
@@ -422,7 +421,7 @@ img {
 }
 /* HERO */
 .about-hero-box {
-  background: url("../img/about-bg-img.png");
+  background: linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)), url("../img/about-bg-img.png");
 }
 .about-hero-container::after {
   background-image: url("../img/about-circle.png");
@@ -544,7 +543,7 @@ img {
 /* STYLES FOR CAREERS.HTML */
 /* HERO */
 .careers-hero-box {
-  background: url("../img/careers-img/careers-bg-img.png");
+  background: linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)), url("../img/careers-img/careers-bg-img.png");
 }
 .careers-hero-container::after {
   background-image: url("../img/about-circle.png");
@@ -569,6 +568,88 @@ img {
   margin-bottom: 103px;
 }
 
+/* our service branches */
+.services-braches{
+  padding-top: 120px;
+  padding-bottom: 160px;
+}
+.braches-list{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.brach-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 33px 64px 33px 40px;
+  background-color: var(--snow);
+}
+.brach-item + .brach-item{
+  margin-top: 24px;
+}
+.brach-name{
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: var(--dark-navy);
+}
+.brach-location{
+  margin: 0;
+  color: var(--dark-navy);
+}
+.apply-link{
+  padding: 14px 67px;
+}
+
+/* Styles for Location.html */
+/* Hero */
+.location-hero-box {
+  background: linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)), url("../img/careers-img/careers-bg-img.png");
+}
+.location-hero-container::after {
+  background-image: url("../img/about-circle.png");
+}
+
+/* Location */
+.our-location{
+  padding: 120px 0;
+}
+.location-container{
+  position: relative;
+  height: 543px;
+  background-image: url("../img/location-img/earth.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* .city-section */
+.city-section-container{
+  margin-bottom: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.city-section-title{
+  width: 351px;
+  margin: 0;
+  margin-right: 30px;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: var(--dark-navy);
+}
+.city-section-text{
+  width: 445px;
+  margin: 0;
+  margin-right: 105px;
+}
 
 /* FOOTER  */
 .sign-in-section{
