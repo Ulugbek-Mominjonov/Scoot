@@ -380,23 +380,7 @@ img {
   background-size: contain;
   background-repeat: no-repeat;
 }
-.feature-number{
-  position: relative;
-  top: -37px;
-  display: inline-block;
-  padding: 34px;
-  border-radius: 50%;
-  font-family: var(--main-font);
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: -1.07143px;
-  color: var(--dark-navy);
-  background-color: var(--yellow);
-}
-.feature-name{
-  margin-top: 0;
-  margin-bottom: 27px;
+.feature-number, .feature-name{
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 24px;
@@ -404,6 +388,19 @@ img {
   text-align: center;
   letter-spacing: -1.07143px;
   color: var(--dark-navy);
+}
+.feature-number{
+  position: relative;
+  top: -37px;
+  display: inline-block;
+  padding: 34px;
+  border-radius: 50%;
+  background-color: var(--yellow);
+}
+.feature-name{
+  margin-top: 0;
+  margin-bottom: 27px;
+  text-align: center;
 }
 .feature-text{
   margin: 0;
