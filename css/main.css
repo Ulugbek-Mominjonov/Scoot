@@ -176,6 +176,7 @@ img {
   height: 18px;
   transform: translateY(-50%);
   background-image: url("../img/mobile-img/gamburger.svg");
+  background-repeat: no-repeat;
   border: none;
   background-color: transparent;
   outline-offset: 10px;
@@ -1090,6 +1091,9 @@ img {
   .logo > img{
     width: 76px;
   }
+  .navigation-wrapper{
+    width: 50%;
+  }
   /* home  */
   /* home hero  */
   .home-hero-container::after{
@@ -1275,6 +1279,12 @@ img {
   }
 }
 @media screen and (max-width: 500px) {
+  .navigation-wrapper{
+    width: 80%;
+  }
+  .nav-get-scotin{
+    white-space: nowrap;
+  }
   /* our-offer */
   .offer-title{
     font-size: 32px;
