@@ -124,10 +124,10 @@ img {
 }
 .offer-item:nth-child(even)::after{
   order: -1;
-  right: 0;
+  right: 115px;
 }
 .offer-item:nth-child(odd)::after{
-  left: 0;
+  left: 115px;
 }
 .offer-wrapper{
   max-width: 445px;
@@ -777,10 +777,6 @@ img {
     padding-right: 40px;
   }
   /* our-offer  */
-  .offer-container{
-    padding-left: 0;
-    padding-right: 0;
-  }
   .offer-item{
     flex-direction: column;
   }
@@ -791,9 +787,11 @@ img {
   .offer-item:nth-child(even)::after{
     order: -1;
     align-self: flex-start;
+    right: 40px;
   }
   .offer-item:nth-child(odd)::after{
     align-self: flex-end;
+    left: 40px;
   }
   .offer-wrapper{
     text-align: center;
@@ -807,8 +805,6 @@ img {
   }
 
   /* FOOTER  */
-  .sign-in-section{
-  }
   .sign-in-container{
     flex-direction: column;
     padding-top: 62px;
@@ -863,7 +859,7 @@ img {
     padding-top: 122px;
     padding-bottom: 0;
     background-image: url("../img/mobile-img/vertical-line.png");
-    background-position: 45px 0;
+    background-position: 80px 0;
   }
   .conveniences-item{
     position: relative;
@@ -1068,6 +1064,9 @@ img {
   }
   .apply-link{
     padding: 12px 55px;
+  }
+  .brach-item{
+    padding: 33px 40px 33px 40px;
   }
 
   /* footer  */
